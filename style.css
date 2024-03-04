@@ -1,0 +1,37 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+#content {
+    text-align: center;
+    position: relative;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 2; 
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#dynamicImg {
+    position: absolute;
+    right: 100px;
+    top: 100px; 
+    transition: transform 0.3s ease;
+    transform-origin: top right; 
+    z-index: 0; 
+}
