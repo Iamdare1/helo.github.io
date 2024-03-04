@@ -1,9 +1,8 @@
 function playMusic() {
     let audioElement = document.getElementById('backgroundMusic');
-    if (audioElement.paused) {
-        audioElement.volume = 0.03;
-        audioElement.play();
-    }
+    audioElement.volume = 0.6; 
+    audioElement.loop = true; 
+    audioElement.play(); 
 }
 
 function moveNoButton() {
@@ -27,8 +26,9 @@ function moveNoButton() {
 
 document.getElementById('noBtn').addEventListener('mouseover', function() {
     moveNoButton();
+    playMusic();
     const dynamicImg = document.getElementById('dynamicImg');
-    dynamicImg.style.transform = 'scale(1.5)';
+    dynamicImg.style.transform = 'scale(1.5)';;
 });
 
 document.getElementById('noBtn').addEventListener('mouseout', function() {
